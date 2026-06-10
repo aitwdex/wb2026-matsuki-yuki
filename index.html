@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_news</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <h1>日本の天気情報</h1>
+</header>
+<body>
+    <section id="local_weather">
+        <h2>地元周辺の天気</h2>
+        <button id="local_weather_button">現在地の天気を表示</button>
+        <div id="local_weather_result"></div>
+        <div id="local_weather_error"></div>
+        <div id="local_weather_loading"></div>
+    </section>
+    <section id="national_weather">
+        <h2>全国の天気</h2>
+        <div class="city-buttons">
+            <button id="sapporo_weather_button">北海道</button>
+            <button id="sendai_weather_button">仙台</button>
+            <button id="tokyo_weather_button">東京</button>
+            <button id="nagoya_weather_button">名古屋</button>
+            <button id="osaka_weather_button">大阪</button>
+            <button id="hiroshima_weather_button">広島</button>
+            <button id="fukuoka_weather_button">福岡</button>
+        </div>
+        <div id="national_weather_result"></div>
+        <div id="national_weather_error"></div>
+        <div id="national_weather_loading"></div>
+    </section>
+    <!-- <section id="international_weather">
+        <h2>世界の天気</h2>
+    </section> -->
+    <script type="module" src="js/main.js"></script>
+</body>
+<footer>
+    <small>Weather data by <a href="https://open-meteo.com/" target="_blank">Open-Meteo.com</a>（CC BY 4.0）</small>
+</footer>
+</html>
