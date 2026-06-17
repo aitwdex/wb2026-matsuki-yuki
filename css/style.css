@@ -1,5 +1,5 @@
 /* ========== ボタン ========== */
-button {
+.btn {
   padding: 0.6rem 1.4rem;
   font-size: 0.95rem;
   font-weight: bold;
@@ -13,9 +13,9 @@ button {
   user-select: none;
 }
 
-button:hover   { background: #155fa8; }
-button:active  { background: #0f4a85; transform: scale(0.97); }
-button:disabled { background: #a0bedd; cursor: not-allowed; transform: none; }
+.btn:hover   { background: #155fa8; }
+.btn:active  { background: #0f4a85; transform: scale(0.97); }
+.btn:disabled { background: #a0bedd; cursor: not-allowed; transform: none; }
 
 /* 各都市のボタン */
 .city-buttons {
@@ -25,7 +25,7 @@ button:disabled { background: #a0bedd; cursor: not-allowed; transform: none; }
   margin-bottom: 1rem;
 }
 
-.city-buttons button {
+.city-buttons .btn {
   flex: 1 1 auto;
   padding: 0.65rem 0.5rem;
 }
@@ -148,12 +148,12 @@ button:disabled { background: #a0bedd; cursor: not-allowed; transform: none; }
 }
 
 /* エラー・ローディング */
-#local_weather_error {
+.error-message {
   color: red;
   margin-top: 0.5rem;
 }
 
-#local_weather_loading {
+.loading-message {
   margin-top: 0.5rem;
   color: #888;
 }
