@@ -1,3 +1,14 @@
+/* ========== ページ全体 ========== */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: #eef3f8;
+}
+
+/* 見出し */
+.section-title {
+  text-decoration: underline;
+}
+
 /* ========== ボタン ========== */
 .btn {
   padding: 0.6rem 1.4rem;
