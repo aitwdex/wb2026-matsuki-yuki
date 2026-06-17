@@ -106,8 +106,8 @@ body {
 }
 
 .weather-slot {
-  flex: 1 1 0;  
-  min-width: 60px; 
+  flex: 1 1 0;
+  min-width: 3.75rem;
   text-align: center;
   padding: 0.5rem 0.25rem;
   border-right: 1px solid #ececec;
@@ -167,4 +167,21 @@ body {
 .loading-message {
   margin-top: 0.5rem;
   color: #888;
+}
+
+/* ========== スマートフォン幅対応 ========== */
+@media (max-width: 600px) {
+  .weather-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .weather-header-right {
+    text-align: left;
+  }
+
+  .city-buttons .btn {
+    flex: 1 1 100%;
+  }
 }
